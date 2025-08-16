@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrut RESTAURANT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="TOP">
+        <div class="LOGO">amrutresto</div>
+        <li class="brand"><img src="logo.png" alt="amrut resto"></li>
+        <div class="nav">
+            
+          <a href="./home.html">HOME</a><!-- <a href="./MENU.html">MENU</a> 
+          <a href="./home.html">HOME</a>
+            <a href="./MENU.html">MENU</a>
+            <a href="./ABOUT.html">ABOUT</a>
+            <a href="./LOCATION.html">LOCATION</a>   
+            <a href="./CONTACT.html">CONTACT</a> -->
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-search"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="heading">
+        <div class="left">
+            <p>Are You Hungry ...?</p>
+            <h1>DON'T WAIT</h1>
+            <p>Come & Enjoy With Family</p>
+            
+            <a href="home.html" class="btn">Go to Home</a>
+
+ 
+        </div>
+        <div class="right" id="food">
+            <img src="food.jpg" alt="Delicious Food">
+        </div>
+    </div>
+
+    <div class="soicalmedia">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i> 
+    </div>
+
+    <div class="bottom">
+        <div class="menu">
+            <div id="food1"><img src="food1.jpg" alt="Dish 1"></div>
+            <div id="food2"><img src="food2.jpg" alt="Dish 2"></div>
+            <div id="food3"><img src="food3.jpg" alt="Dish 3"></div>
+            <div id="food4"><img src="food4.jpg" alt="Dish 4"></div>
+            <div id="food5"><img src="food5.jpg" alt="Dish 5"></div>
+            <div id="food6"><img src="food6.jpg" alt="Dish 6"></div>
+            <div id="food7"><img src="food7.jpg" alt="Dish 7"></div>
+            <div id="food8"><img src="food8.jpg" alt="Dish 8"></div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on("click", function (event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          }
+        );
+      } // End if
+    });
+  });
+</script>
+</html>
